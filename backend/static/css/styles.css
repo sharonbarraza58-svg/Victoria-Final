@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondos base */
+.login-body {
+    background: #060d08 url('../img/fondo_log_in.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.dashboard-body {
+    background: #030705 url('../img/Fondo dasboard.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    overflow-y: auto; 
+}
+
+/* Parte del login*/
+
+.login-container {
+    display: flex;
+    width: 95%;
+    max-width: 1180px;
+    height: 85vh;
+    min-height: 640px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 50%;
+    padding: 40px 30px 40px 50px;
+    height: 100%;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.04) !important;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 28px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.login-card {
+    padding: 30px 35px;
+    color: white;
+}
+
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.brand-text {
+    font-size: 1.9rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+.v-mini-logo {
+    width: 28px;
+    height: auto;
+}
+
+.login-title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+.custom-input-group {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50px;
+    padding: 5px 14px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.input-icon-wrapper {
+    background: #ffffff;
+    color: #121212;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.custom-input-group input {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    color: #ffffff !important;
+    width: 100%;
+    padding: 6px 14px;
+    font-size: 1rem;
+}
+
+.custom-input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.login-info-text {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.login-footer-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-forgot-password {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.88rem;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 22px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.btn-submit-arrow {
+    background: #ffffff;
+    border: none;
+    color: #000000;
+    width: 55px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.support-bar {
+    background: #143520;
+    border-radius: 25px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.support-meta h3 {
+    font-size: 1.35rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.support-meta p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+}
+
+.support-action-btn {
+    background: #ffffff;
+    text-decoration: none;
+    color: #143520;
+    padding: 5px 5px 5px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.arrow-circle {
+    background: #143520;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-panel {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.figma-static-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+/*barra de tareas*/
+.app-navbar {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 16px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-container-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand-wrapper {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brand-letter {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.central-sliding-nav {
+    position: relative;
+    display: flex;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 6px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sliding-arrow-indicator {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    bottom: -22px;
+    left: 0;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-tab-item {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-tab-item.active, .menu-tab-item:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.profile-actions-wrapper {
+    display: flex;
+    gap: 12px;
+}
+
+.action-circle-btn {
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/* Contenedor Flotante del Ecosistema */
+.glass-viewport-wrapper {
+    background: rgba(255, 255, 255, 0.04) !important;
+    backdrop-filter: blur(25px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 35px;
+    padding: 50px;
+    min-height: 70vh;
+    position: relative;
+}
+
+.ecosystem-view-pane {
+    display: none;
+}
+
+.ecosystem-view-pane.active-pane {
+    display: block;
+}
+
+.pane-context-header {
+    margin-bottom: 40px;
+}
+
+.hierarchy-tracker {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pane-main-title {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+/* Dashboard */
+.figma-data-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 24px;
+    color: #1c352d;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ffffff;
+    height: 100%;
+}
+
+.figma-card-icon {
+    background: rgba(28, 53, 45, 0.08);
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: #1c352d;
+}
+
+.figma-card-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.figma-card-subtitle {
+    font-size: 0.95rem;
+    color: #444444;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.figma-highlight-num {
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: #1c352d;
+}
+
+/* LISTADO DE TAREAS */
+.section-block-label {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+}
+
+.figma-list-row {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 16px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1c352d;
+}
+
+.row-icon-indicator {
+    background: rgba(28, 53, 45, 0.06);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1c352d;
+}
+
+.row-main-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.row-sub-text {
+    font-size: 0.88rem;
+    color: #555;
+    margin: 0;
+}
+
+.btn-figma-action {
+    background: #1c352d;
+    color: #ffffff;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.88rem;
+}
+
+.bottom-left-utility {
+    position: absolute;
+    bottom: 35px;
+    left: 45px;
+}
+
+.btn-utility-exit {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.6rem;
+}
+
+/*apartado competencias*/
+.competency-group-wrapper {
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.accordion-trigger-header {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 18px 28px;
+    color: #1c352d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 22px;
+}
+
+.accordion-trigger-header.active-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.group-icon {
+    background: rgba(28, 53, 45, 0.08);
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.group-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.group-meta {
+    font-size: 0.85rem;
+    color: #444;
+    margin: 0;
+}
+
+.group-inner-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px 20px 20px 20px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.figma-sub-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 14px 22px;
+    color: #1c352d;
+}
+
+.sub-card-icon {
+    background: rgba(28, 53, 45, 0.06);
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sub-card-teacher {
+    font-size: 0.85rem;
+    color: #555;
+    margin: 0;
+}
+
+.btn-figma-badge {
+    background: #1c352d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 6px 16px;
+    font-size: 0.82rem;
+}
+
+/*responsividad*/
+@media (max-width: 991px) {
+    .login-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .left-panel, .right-panel {
+        width: 100%;
+    }
+    .right-panel {
+        height: 340px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-container-inner {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .menu-tab-item span {
+        display: none;
+    }
+    .sliding-arrow-indicator {
+        display: none;
+    }
+    .glass-viewport-wrapper {
+        padding: 25px;
+    }
+}
